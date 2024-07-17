@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: book-lovers-library
+  datasource:
+    url: jdbc:postgresql://localhost:5432/book_lovers
+    username: postgres
+    password: secret
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+
+server:
+  servlet:
+    context-path: /book-lovers
+  port: 1010
+#secret-key: a78cc0db5d1592b032fef32b8c5239c0b89a73ce91fdea8951b5dda5f814785d
